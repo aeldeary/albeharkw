@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albehar KW | البحار</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #212529;
+            --primary-btn: #ffffff;
+            --btn-border: #e9ecef;
+            --btn-hover: #f1f3f5;
+            --accent-color: #E1306C; /* Instagram brand color accent */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px; /* Mobile optimal width */
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .profile-header {
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid transparent;
+            background: linear-gradient(white, white) padding-box,
+                        linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) border-box;
+            margin-bottom: 15px;
+        }
+
+        .brand-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .handle {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-bottom: 15px;
+            text-decoration: none;
+        }
+
+        .bio {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            color: #495057;
+        }
+
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 16px;
+            background-color: var(--primary-btn);
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            border: 1px solid var(--btn-border);
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .link-btn:hover {
+            background-color: var(--btn-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .instagram-feed-preview {
+            text-align: right;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .grid-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+        }
+
+        .grid-item {
+            aspect-ratio: 1 / 1;
+            background-color: #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #adb5bd;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-header">
+            <!-- Replace with actual logo/profile picture URL -->
+            <img src="https://via.placeholder.com/150" alt="Albehar KW Logo" class="profile-img">
+            <h1 class="brand-name">Albehar KW</h1>
+            <a href="https://instagram.com/albeharkw" target="_blank" class="handle">@albeharkw</a>
+            <p class="bio">الموقع الرسمي. نُقدم لك أفضل الخدمات والمنتجات. تابع حسابنا لتصلك أحدث العروض الحصرية.</p>
+        </div>
+
+        <!-- Call to Action Links -->
+        <div class="links-wrapper">
+            <a href="https://instagram.com/albeharkw" class="link-btn" target="_blank">
+                تابعنا على إنستجرام
+            </a>
+            <a href="#" class="link-btn">
+                تصفح منتجاتنا
+            </a>
+            <a href="#" class="link-btn">
+                تواصل معنا (WhatsApp)
+            </a>
+        </div>
+
+        <!-- Instagram Feed Mockup -->
+        <div class="instagram-feed-preview">
+            <h2 class="section-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                أحدث المنشورات
+            </h2>
+            <div class="grid-gallery">
+                <!-- Replace placeholders with actual Instagram post images -->
+                <a href="https://instagram.com/albeharkw" target="_blank" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=400&auto=format&fit=crop" alt="Post 1">
+                </a>
+                <a href="https://instagram.com/albeharkw" target="_blank" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=400&auto=format&fit=crop" alt="Post 2">
+                </a>
+                <a href="https://instagram.com/albeharkw" target="_blank" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=400&auto=format&fit=crop" alt="Post 3">
+                </a>
+                <a href="https://instagram.com/albeharkw" target="_blank" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=400&auto=format&fit=crop" alt="Post 4">
+                </a>
+                <a href="https://instagram.com/albeharkw" target="_blank" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?q=80&w=400&auto=format&fit=crop" alt="Post 5">
+                </a>
+                <a href="https://instagram.com/albeharkw" target="_blank" class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=400&auto=format&fit=crop" alt="Post 6">
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 Albehar KW - albeharkw.com</p>
+        </footer>
+    </div>
+
+</body>
+</html>
